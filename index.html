@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -94,7 +98,7 @@
                     <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Mahasiswi & <span
                             class="text-dark dark:text-white">Web Developer</span></h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar Desain Web itu mudah dan
-                        menyenangkan bukan. <span class="text-dark font-bold dark:text-white">Bukan!</span></p>
+                        menyenagkan bukan. <span class="text-dark font-bold dark:text-white">Bukan!</span></p>
                     <a href="#"
                         class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
                         Saya</a>
@@ -344,44 +348,55 @@
         </div>
     </section>
     <!-- Blog Section End -->
-    <!-- Gallery Section Start -->
-    <section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
-        <div class="container">
-            <div class="w-full px-4">
-                <div class="max-w-xl mx-auto text-center mb-16">
-                    <h4 class="font-semibold text-lg text-primary mb-2">Gallery</h4>
-                </div>
+<!-- Gallery Section Start -->
+<section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+    <div class="container">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-primary mb-2">Gallery</h4>
             </div>
-            <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/gallery/1.jpeg" alt="Foto 1" width="w-full" />
+        </div>
+        <div class="w-full px-4 xl:w-10/12 xl:mx-auto">
+            <!-- Swiper Carousel -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="img/gallery/1.jpeg" alt="Foto 1" class="w-full h-auto" />
+                        </div>
                     </div>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/gallery/2.jpeg" alt="Foto 2" width="w-full" />
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="img/gallery/2.jpeg" alt="Foto 2" class="w-full h-auto" />
+                        </div>
                     </div>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/gallery/3.jpeg" alt="Foto 3" width="w-full" />
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="img/gallery/3.jpeg" alt="Foto 3" class="w-full h-auto" />
+                        </div>
                     </div>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/gallery/4.jpeg" alt="Foto 4" width="w-full" />
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="img/gallery/4.jpeg" alt="Foto 4" class="w-full h-auto" />
+                        </div>
                     </div>
-                </div>
-                <div class="mb-12 p-4 md:w-1/2">
-                    <div class="rounded-md shadow-md overflow-hidden">
-                        <img src="img/gallery/5.jpeg" alt="Foto 5" width="w-full" />
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="rounded-md shadow-md overflow-hidden">
+                            <img src="img/gallery/5.jpeg" alt="Foto 5" class="w-full h-auto" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Gallery Section End -->
+    </div>
+</section>
+<!-- Gallery Section End -->
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
@@ -427,7 +442,7 @@
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
                     <h2 class="font-bold text-3xl text-white mb-5">Fakultas Ilmu Komputer</h2>
                     <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-                    <p>irfha.naqis26@gmail.com</p>
+                    <p>bagusaliakbar@unsub.ac.id</p>
                     <p>Jl. R.A Kartini KM3</p>
                     <p>Subang</p>
                 </div>
@@ -535,7 +550,44 @@
         </div>
     </footer>
     <!-- Footer End -->
+    <!-- Back to top Start -->
+    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+        <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
     <script src="src/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper-container', {
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // Responsiveness
+            breakpoints: {
+                // Mobile
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                // Tablet
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // Desktop
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
