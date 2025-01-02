@@ -9,8 +9,7 @@ Selamat datang di repositori portofolio saya! Di sini Anda akan menemukan rangku
 Halo! Saya Iqbal Rizki Maulana, seorang Mahasiswa, yang bersemangat tentang pengembangan web dan AI. Saya senang memecahkan masalah dan menciptakan solusi berdampak melalui teknologi.
 
 - 🌟 **Spesialisasi**: Full-Stack Development.
-- 🌐 **Situs Web/Portofolio**: [https://iqbalzzx.github.io/portofolio]
-
+- 🌐 **Situs Web/Portofolio**: https://irfha05.github.io/portofolio/
 ---
 
 ## 🛠️ Keterampilan
