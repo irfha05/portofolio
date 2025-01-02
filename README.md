@@ -6,10 +6,10 @@ Selamat datang di repositori portofolio saya! Di sini Anda akan menemukan rangku
 
 ## 🚀 Tentang Saya
 
-Halo! Saya Iqbal Rizki Maulana, seorang Mahasiswa, yang bersemangat tentang pengembangan web dan AI. Saya senang memecahkan masalah dan menciptakan solusi berdampak melalui teknologi.
+Halo! Saya Irfha Najla Qisti, seorang Mahasiswa, yang bersemangat tentang pengembangan web dan AI. Saya senang memecahkan masalah dan menciptakan solusi berdampak melalui teknologi.
 
 - 🌟 **Spesialisasi**: Full-Stack Development.
-- 🌐 **Situs Web/Portofolio**: https://irfha05.github.io/portofolio/
+- 🌐 **Situs Web/Portofolio**: [https://irfha05.github.io/portofolio/]
 ---
 
 ## 🛠️ Keterampilan
@@ -42,8 +42,8 @@ Berikut adalah beberapa teknologi dan alat yang saya gunakan untuk membuat porto
 ## 🤝 Mari Terhubung
 
 Jangan ragu untuk menghubungi saya melalui:
-- **Email**: -
-- **GitHub**: [https://github.com/IqbalzzX]
+- **Email**: [irfha.naqis26@gmail.com]
+- **GitHub**: [https://github.com/irfha05]
 
 ---
 
