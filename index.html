@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
     <link href="src/output.css" rel="stylesheet" />
-    <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
@@ -348,55 +345,120 @@
         </div>
     </section>
     <!-- Blog Section End -->
-<!-- Gallery Section Start -->
-<section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
-    <div class="container">
-        <div class="w-full px-4">
-            <div class="max-w-xl mx-auto text-center mb-16">
-                <h4 class="font-semibold text-lg text-primary mb-2">Gallery</h4>
+    <!-- Gallery Section Start -->
+    <section id="gallery" class="pt-36 pb-16 bg-slate-100 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="font-semibold text-lg text-primary mb-2">Gallery</h4>
+                </div>
             </div>
-        </div>
-        <div class="w-full px-4 xl:w-10/12 xl:mx-auto">
-            <!-- Swiper Carousel -->
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+            <div class="w-full px-4 xl:w-10/12 xl:mx-auto">
+                <!-- Swiper Carousel -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
 
-                    <!-- Slide 1 -->
-                    <div class="swiper-slide">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="img/gallery/1.jpeg" alt="Foto 1" class="w-full h-auto" />
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide relative">
+                            <div class="rounded-md shadow-md overflow-hidden relative">
+                                <img src="img/gallery/1.jpeg" alt="Foto 1" class="w-full h-auto" />
+                                <!-- Like & Dislike Buttons -->
+                                <div
+                                    class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
+                                    <button class="like-button flex items-center space-x-2" data-id="1">
+                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                    <button class="dislike-button flex items-center space-x-2" data-id="1">
+                                        <span class="text-red-500 text-2xl">👎</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Slide 2 -->
-                    <div class="swiper-slide">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="img/gallery/2.jpeg" alt="Foto 2" class="w-full h-auto" />
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide relative">
+                            <div class="rounded-md shadow-md overflow-hidden relative">
+                                <img src="img/gallery/2.jpeg" alt="Foto 2" class="w-full h-auto" />
+                                <!-- Like & Dislike Buttons -->
+                                <div
+                                    class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
+                                    <button class="like-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                    <button class="dislike-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-red-500 text-2xl">👎</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Slide 3 -->
-                    <div class="swiper-slide">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="img/gallery/3.jpeg" alt="Foto 3" class="w-full h-auto" />
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide relative">
+                            <div class="rounded-md shadow-md overflow-hidden relative">
+                                <img src="img/gallery/3.jpeg" alt="Foto 3" class="w-full h-auto" />
+                                <!-- Like & Dislike Buttons -->
+                                <div
+                                    class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
+                                    <button class="like-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                    <button class="dislike-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-red-500 text-2xl">👎</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Slide 4 -->
-                    <div class="swiper-slide">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="img/gallery/4.jpeg" alt="Foto 4" class="w-full h-auto" />
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide relative">
+                            <div class="rounded-md shadow-md overflow-hidden relative">
+                                <img src="img/gallery/4.jpeg" alt="Foto 4" class="w-full h-auto" />
+                                <!-- Like & Dislike Buttons -->
+                                <div
+                                    class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
+                                    <button class="like-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                    <button class="dislike-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-red-500 text-2xl">👎</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Slide 5 -->
-                    <div class="swiper-slide">
-                        <div class="rounded-md shadow-md overflow-hidden">
-                            <img src="img/gallery/5.jpeg" alt="Foto 5" class="w-full h-auto" />
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide relative">
+                            <div class="rounded-md shadow-md overflow-hidden relative">
+                                <img src="img/gallery/5.jpeg" alt="Foto 5" class="w-full h-auto" />
+                                <!-- Like & Dislike Buttons -->
+                                <div
+                                    class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
+                                    <button class="like-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                    <button class="dislike-button flex items-center space-x-2" data-id="2">
+                                        <span class="text-red-500 text-2xl">👎</span>
+                                        <span class="count text-white text-sm">0</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- Gallery Section End -->
+    </section>
+    <!-- Gallery Section End -->
     <!-- Contact Section Start -->
     <section id="contact" class="pt-36 pb-32 dark:bg-dark">
         <div class="container">
@@ -442,7 +504,7 @@
                 <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
                     <h2 class="font-bold text-3xl text-white mb-5">Fakultas Ilmu Komputer</h2>
                     <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
-                    <p>bagusaliakbar@unsub.ac.id</p>
+                    <p>irfha.naqis26@gmail.com</p>
                     <p>Jl. R.A Kartini KM3</p>
                     <p>Subang</p>
                 </div>
@@ -551,7 +613,9 @@
     </footer>
     <!-- Footer End -->
     <!-- Back to top Start -->
-    <a href="#home" class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse" id="to-top">
+    <a href="#home"
+        class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-primary p-4 hover:animate-pulse"
+        id="to-top">
         <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- Back to top End -->
@@ -586,6 +650,72 @@
                     spaceBetween: 30,
                 },
             },
+        });
+
+        const userStatus = JSON.parse(localStorage.getItem("userStatus")) || {};
+
+        const updateCounts = (photoId) => {
+            const likeButton = document.querySelector(`.like-button[data-id="${photoId}"]`);
+            const dislikeButton = document.querySelector(`.dislike-button[data-id="${photoId}"]`);
+            const likeCount = likeButton.querySelector(".count");
+            const dislikeCount = dislikeButton.querySelector(".count");
+
+            likeCount.textContent = userStatus[photoId]?.likes || 0;
+            dislikeCount.textContent = userStatus[photoId]?.dislikes || 0;
+        };
+
+        document.querySelectorAll(".like-button").forEach((button) => {
+            const photoId = button.getAttribute("data-id");
+            if (!userStatus[photoId]) {
+                userStatus[photoId] = { likes: 0, dislikes: 0, status: null };
+            }
+            updateCounts(photoId);
+        });
+
+        // Like button 
+        document.querySelectorAll(".like-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const photoId = button.getAttribute("data-id");
+                const dislikeButton = document.querySelector(`.dislike-button[data-id="${photoId}"]`);
+                const likeCount = button.querySelector(".count");
+                const dislikeCount = dislikeButton.querySelector(".count");
+
+                if (userStatus[photoId].status === "liked") {
+                    return;
+                } else {
+                    if (userStatus[photoId].status === "disliked") {
+                        userStatus[photoId].dislikes--;
+                        dislikeCount.textContent = userStatus[photoId].dislikes;
+                    }
+                    userStatus[photoId].likes++;
+                    userStatus[photoId].status = "liked";
+                    likeCount.textContent = userStatus[photoId].likes;
+                    localStorage.setItem("userStatus", JSON.stringify(userStatus));
+                }
+            });
+        });
+
+        // Dislike button
+        document.querySelectorAll(".dislike-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                const photoId = button.getAttribute("data-id");
+                const likeButton = document.querySelector(`.like-button[data-id="${photoId}"]`);
+                const likeCount = likeButton.querySelector(".count");
+                const dislikeCount = button.querySelector(".count");
+
+                if (userStatus[photoId].status === "disliked") {
+                    return;
+                } else {
+                    if (userStatus[photoId].status === "liked") {
+                        userStatus[photoId].likes--;
+                        likeCount.textContent = userStatus[photoId].likes;
+                    }
+                    userStatus[photoId].dislikes++;
+                    userStatus[photoId].status = "disliked";
+                    dislikeCount.textContent = userStatus[photoId].dislikes;
+                    localStorage.setItem("userStatus", JSON.stringify(userStatus));
+                }
+            });
         });
     </script>
 </body>
