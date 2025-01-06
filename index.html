@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Tailwind CSS</title>
     <link href="src/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script>
         if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
@@ -89,13 +91,14 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Halo Semua 👋, saya <span id="rotateTexts" data-aos="fade-right"
+                        data-aos-delay="50"   data-aos-duration="500"
                             class="block font-bold text-dark text-4xl mt-1 lg:text-5xl dark:text-white">Irfha Najla
-                            Qisti</span></h1>
-                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Mahasiswi & <span
+                            Qisti ar</span></h1>
+                    <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Mahasiswi & <span id="rotateText"
                             class="text-dark dark:text-white">Web Developer</span></h2>
                     <p class="font-medium text-secondary mb-10 leading-relaxed">Belajar Desain Web itu mudah dan
-                        menyenagkan bukan. <span class="text-dark font-bold dark:text-white">Bukan!</span></p>
+                        menyenangkan bukan. <span class="text-dark font-bold dark:text-white">Bukan!</span></p>
                     <a href="#"
                         class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Hubungi
                         Saya</a>
@@ -366,7 +369,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
                                     <button class="like-button flex items-center space-x-2" data-id="1">
-                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="text-green-500 text-2xl">❤️</span>
                                         <span class="count text-white text-sm">0</span>
                                     </button>
                                     <button class="dislike-button flex items-center space-x-2" data-id="1">
@@ -385,7 +388,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
                                     <button class="like-button flex items-center space-x-2" data-id="2">
-                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="text-green-500 text-2xl">❤️</span>
                                         <span class="count text-white text-sm">0</span>
                                     </button>
                                     <button class="dislike-button flex items-center space-x-2" data-id="2">
@@ -404,7 +407,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
                                     <button class="like-button flex items-center space-x-2" data-id="2">
-                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="text-green-500 text-2xl">❤️</span>
                                         <span class="count text-white text-sm">0</span>
                                     </button>
                                     <button class="dislike-button flex items-center space-x-2" data-id="2">
@@ -423,7 +426,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
                                     <button class="like-button flex items-center space-x-2" data-id="2">
-                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="text-green-500 text-2xl">❤️</span>
                                         <span class="count text-white text-sm">0</span>
                                     </button>
                                     <button class="dislike-button flex items-center space-x-2" data-id="2">
@@ -442,7 +445,7 @@
                                 <div
                                     class="absolute bottom-2 left-2 flex items-center space-x-4 bg-black bg-opacity-50 px-4 py-2 rounded-md">
                                     <button class="like-button flex items-center space-x-2" data-id="2">
-                                        <span class="text-green-500 text-2xl">👍</span>
+                                        <span class="text-green-500 text-2xl">❤️</span>
                                         <span class="count text-white text-sm">0</span>
                                     </button>
                                     <button class="dislike-button flex items-center space-x-2" data-id="2">
@@ -619,6 +622,10 @@
         <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
     </a>
     <!-- Back to top End -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="src/script.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
